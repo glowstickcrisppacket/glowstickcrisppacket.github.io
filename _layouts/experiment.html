@@ -1,0 +1,32 @@
+---
+layout: default
+body_class: left-sidebar
+active_item: experiments
+---
+
+          <div class="row 200%">
+
+            <!-- Sidebar -->
+              <div id="sidebar" class="4u 12u(narrower)">
+
+{% for image in page.images %}
+<img src="{{ image }}" class="img-fix" />
+{% endfor %}
+    </div>
+
+            <!-- Content -->
+              <div id="content" class="8u 12u(narrower) important(narrower)">
+
+
+              <article>
+                <header>
+                  <h2>{{ page.title }}</h2>
+                </header>
+
+{{ content }}
+
+              </article>
+
+            </div>
+          </div>
+
